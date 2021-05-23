@@ -1,0 +1,2 @@
+set system name-server 208.67.222.22
+set system name-server 208.67.222.23
