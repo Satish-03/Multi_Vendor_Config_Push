@@ -7,8 +7,11 @@ Network Configuration Management ie NCM takes care of device configuration of sw
      * Provide IP addresses in read.csv file
      * Run ./mainfile.py confcmd.txt 
 
+
 Pushing Configs into Juniper SRX
-![F1](https://user-images.githubusercontent.com/63805419/119380589-8f6d5200-bcde-11eb-975f-c3645f2bc55d.png)
+![F1](https://user-images.githubusercontent.com/63805419/119382304-79ac5c80-bcdf-11eb-8565-35869147703f.png)
+![F2](https://user-images.githubusercontent.com/63805419/119382462-a9f3fb00-bcdf-11eb-85a8-8b5eeacd65ae.png)
+
 ![F2](https://user-images.githubusercontent.com/63805419/119380638-9c8a4100-bcde-11eb-949e-f125208b84e2.png)
 
 
