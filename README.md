@@ -3,8 +3,7 @@ Network Configuration Management ie NCM takes care of device configuration of sw
   
   Instructions to use
      
-     
-     Provide config mode commands in confcmd.txt file
-     Provide IP addresses in read.csv file
-     Run ./mainfile.py confcmd.txt 
+     * Provide config mode commands in confcmd.txt file
+     * Provide IP addresses in read.csv file
+     * Run ./mainfile.py confcmd.txt 
     
