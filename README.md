@@ -6,6 +6,9 @@ Network Configuration Management ie NCM takes care of device configuration of sw
      * Provide config mode commands in confcmd.txt file
      * Provide IP addresses in read.csv file
      * Run ./mainfile.py confcmd.txt 
+     * When ask for to select a vendor, enter vendor name as Juniper or juniper or only number
+     * Application will work on Juniper, Cisco IOS and Arista EOS
+     * Privide IPs from the same vendor at a time.
 
 
 Pushing Configs into Juniper SRX
