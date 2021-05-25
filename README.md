@@ -13,6 +13,11 @@ Pushing Configs into Juniper SRX
 
 ![F2](https://user-images.githubusercontent.com/63805419/119382462-a9f3fb00-bcdf-11eb-85a8-8b5eeacd65ae.png)
 
+Pushing Configs into Juniper SRX
+![F3](https://user-images.githubusercontent.com/63805419/119451637-2247d400-bd53-11eb-94e9-25ee370cde41.png)
+
+![F4](https://user-images.githubusercontent.com/63805419/119451662-2b38a580-bd53-11eb-90df-a4b1d57b6ecd.png)
+
 
 
 
