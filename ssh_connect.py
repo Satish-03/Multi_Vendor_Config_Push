@@ -23,8 +23,8 @@ def jssh_connect(ip, username, passwd, cmd):
                }
        connection = ConnectHandler(**Device)
        connection.enable()
-       confsnmp = connection.send_config_set(config_commands=cmd, delay_factor=10, max_loops=500, exit_config_mode= False)
-       print(confsnmp)
+       confout = connection.send_config_set(config_commands=cmd, delay_factor=10, max_loops=500, exit_config_mode= False)
+       print(confout)
        connection.commit()
        connection.exit_config_mode()
 #Disconnecting from the current device
@@ -35,7 +35,7 @@ def jssh_connect(ip, username, passwd, cmd):
     except (NetMikoTimeoutException):
        print("Session timed out....Try again")
 
-def assh_connect(ip, username, passwd, cmd):
+def assh_connect(ip, username, passwd, cmd_file):
     try:
        global line
 
@@ -45,11 +45,12 @@ def assh_connect(ip, username, passwd, cmd):
                       'password':passwd,
                       'secret':'cisco', 
                       'device_type':'arista_eos',
+                      'global_delay_factor': 10,
                }
        connection = ConnectHandler(**Device)
        connection.enable()
-       confsnmp = connection.send_config_set(config_commands=cmd, delay_factor=10, max_loops=500)
-       print(confsnmp)
+       confout = connection.send_config_from_file(config_file=cmd_file)
+       print(confout)
        connection.save_config()
 #Disconnecting from the current device
        connection.disconnect() 
@@ -60,7 +61,7 @@ def assh_connect(ip, username, passwd, cmd):
        print("Session timed out....Try again")
 
 
-def cssh_connect(ip, username, passwd, cmd):
+def cssh_connect(ip, username, passwd, cmd_file):
     try:
        global line
 
@@ -70,11 +71,12 @@ def cssh_connect(ip, username, passwd, cmd):
                       'password':passwd,
                       'secret':'cisco', 
                       'device_type':'cisco_ios',
+                      'global_delay_factor': 10,
                }
        connection = ConnectHandler(**Device)
        connection.enable()
-       confsnmp = connection.send_config_set(config_commands=cmd, delay_factor=10, max_loops=500)
-       print(confsnmp)
+       confout = connection.send_config_from_file(config_file=cmd_file)
+       print(confout)
        connection.save_config()
 #Disconnecting from the current device
        connection.disconnect() 
