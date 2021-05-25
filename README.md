@@ -18,7 +18,9 @@ Pushing Configs into Arista EOS
 
 ![F4](https://user-images.githubusercontent.com/63805419/119451662-2b38a580-bd53-11eb-90df-a4b1d57b6ecd.png)
 
+Pushing Configs into Cisco IOS
+![F5](https://user-images.githubusercontent.com/63805419/119514045-5a223c00-bd92-11eb-958e-2ab8e592541a.png)
 
-
+![F6](https://user-images.githubusercontent.com/63805419/119514077-5f7f8680-bd92-11eb-8c86-d30e36fc7a81.png)
 
  
