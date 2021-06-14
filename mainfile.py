@@ -72,7 +72,7 @@ passwd = getpass.getpass('''\nAnd your password : ''')
 
 print("\n" + line)
 
-if vendor == 1 or venlow == 'cisco':
+if vendor == '1' or venlow == 'cisco':
 
     # Starting time count
     start = time.time()
@@ -91,7 +91,7 @@ if vendor == 1 or venlow == 'cisco':
     print("Task completed in {} seconds.".format(consume))
     print(line)
 
-elif vendor == 2 or venlow == 'juniper':
+elif vendor == '2' or venlow == 'juniper':
     # Starting time count
     start = time.time()
 
